@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+	.nav-link{
+		@apply inline-block py-2 px-4 text-black font-bold no-underline hover:text-blue-700;
+	}
+
+}
