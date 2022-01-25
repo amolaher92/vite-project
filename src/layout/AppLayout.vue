@@ -1,0 +1,23 @@
+<template>
+  <div class="leading-normal tracking-normal bg-gradient-to-r from-pink-500 to-orange-500">
+    <app-header></app-header>
+    <slot></slot>
+    <app-footer></app-footer>
+  </div>
+</template>
+
+<script>
+import AppHeader from '@/components/AppHeader.vue';
+import AppFooter from '@/components/AppFooter.vue';
+
+export default {
+  name: "AppLayout",
+  components: {
+    AppHeader, AppFooter
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
