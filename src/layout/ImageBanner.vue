@@ -5,7 +5,7 @@
         <div class="flex flex-col items-center justify-center gap-5">
           <img
               src="https://media.istockphoto.com/photos/cheerful-fashionable-adult-man-in-city-setting-picture-id1310533180?b=1&k=20&m=1310533180&s=170667a&w=0&h=EdRuvIkrMifhyZJkHXf5Pk68ri44_g7OFnU8lIdbc-c="
-              alt="" class="w-96 h-96 rounded-full object-cover"/>
+              alt="" class="sm:w-96 sm:h-96 w-72 h-72 rounded-full object-cover"/>
         </div>
         <div class="flex flex-col items-center justify-center py-8 px-12 sm:px-24 border">
           <div class="w-full grid grid-cols-5 grid-flex-cols gap-3">
