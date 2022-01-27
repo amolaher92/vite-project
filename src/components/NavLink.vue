@@ -1,5 +1,5 @@
 <template>
-    <ul class="list-reset lg:flex justify-end flex-1 items-center">
+    <ul class="list-reset md:flex justify-end flex-1 items-center">
         <template v-for="(link,index) in links" :key="index">
             <li class="mr-3">
                 <router-link class="nav-link" :to="{name:link.slug}">{{link.label}}</router-link>
