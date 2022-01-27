@@ -25,7 +25,7 @@
       </g>
     </g>
   </svg>
-  <section class="container mx-auto text-center py-6">
+  <section class="container mx-auto text-center">
     <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
       Call to Action
     </h1>

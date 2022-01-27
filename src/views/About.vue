@@ -81,12 +81,17 @@
       </div>
     </div>
   </section>
+  <image-banner></image-banner>
 </template>
 
 <script>
+import ImageBanner from "@/layout/ImageBanner.vue";
 
 export default {
   name: "About",
+  components: {
+    ImageBanner
+  }
 }
 </script>
 

@@ -3,7 +3,7 @@
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-5">
       <!-- brand logo -->
       <div class="pl-4 flex items-center">
-        <router-link class="toggleColour text-red-700 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+        <router-link class="toggleColour text-blue-700 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
                      to="/">
           <!--Icon from: http://www.potlabicons.com/ -->
           <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
