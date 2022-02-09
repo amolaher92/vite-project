@@ -81,17 +81,23 @@
       </div>
     </div>
   </section>
+  <section class="mt-5 p-4">
+    <ExperienceTimeLine/>
+  </section>
 </template>
 <script>
-export default{
-	name:"Experience",
-	data(){
-		return{
+import ExperienceTimeLine from '@/components/ExperienceTimeLine.vue'
 
-		}
-	}
+export default {
+  name: "Experience",
+  components: {
+    ExperienceTimeLine
+  },
+  data() {
+    return {}
+  }
 }
 </script>
 <style lang="sass" scoped>
-	
+
 </style>

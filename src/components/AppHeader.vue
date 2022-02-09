@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed w-full z-30 top-0 bg-gradient-to-r from-pink-500 to-orange-500">
+  <nav class="fixed w-full z-30 top-0 bg-gradient-to-r from-pink-500 to-orange-500" v-cloak>
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-5">
       <!-- brand logo -->
       <div class="pl-4 flex items-center">
@@ -71,5 +71,4 @@ export default {
   }
 }
 </script>
-<style scoped>
-</style>
+<style lang="scss" scoped/>

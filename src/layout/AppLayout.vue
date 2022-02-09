@@ -13,7 +13,7 @@ import AppFooter from '@/components/AppFooter.vue';
 export default {
     name: "AppLayout",
     components: {
-        AppHeader, 
+        AppHeader,
         AppFooter,
         // TheNavbar
     }
