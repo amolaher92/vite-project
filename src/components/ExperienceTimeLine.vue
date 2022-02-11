@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card border border-white p-12">
     <Timeline :value="experiences" align="alternate" class="customized-timeline">
       <template #marker="slotProps">
                     <span class="custom-marker shadow-2 p-8" :style="{backgroundColor: slotProps.item.color}">
@@ -18,7 +18,7 @@
           </template>
           <template #content>
             <ul class="flex text-left" v-for="list in slotProps.item.lists">
-              <li>{{ list }}</li>
+              <li class="flex"><i class="pi pi-chevron-right mr-2 mt-1"></i>{{ list }}</li>
             </ul>
           </template>
         </Card>

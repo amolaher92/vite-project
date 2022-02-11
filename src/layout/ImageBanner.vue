@@ -9,11 +9,11 @@
         </div>
         <div class="flex flex-col items-center justify-center py-8 px-12 sm:px-24 border">
           <div class="w-full grid grid-cols-5 grid-flex-cols gap-3">
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
+            <img src="https://via.placeholder.com/100" alt="" class="rounded-full object-cover max-w-22 max-h-22"/>
+            <img src="https://via.placeholder.com/100" alt="" class="rounded-full object-cover max-w-22 max-h-22"/>
+            <img src="https://via.placeholder.com/100" alt="" class="rounded-full object-cover max-w-22 max-h-22"/>
+            <img src="https://via.placeholder.com/100" alt="" class="rounded-full object-cover max-w-22 max-h-22"/>
+            <img src="https://via.placeholder.com/100" alt="" class="rounded-full object-cover max-w-22 max-h-22"/>
           </div>
         </div>
       </div>
@@ -27,18 +27,9 @@
             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <div class="flex flex-col items-center py-8 px-8 border">
-          <div class="w-full grid grid-cols-5 md:grid-cols-7 grid-flex-cols gap-4">
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
-            <img src="https://via.placeholder.com/50" alt=""/>
+        <div class="flex flex-col items-center border">
+          <div class="w-full grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-2 sm:p-12 p-4 sm:p-2">
+            <skills-badge v-for="i in 10">{{ i }}</skills-badge>
           </div>
         </div>
       </div>
@@ -71,8 +62,13 @@
 </template>
 
 <script>
+import SkillsBadge from "@/components/SkillsBadge.vue";
+
 export default {
-  name: "ImageBanner"
+  name: "ImageBanner",
+  components: {
+    SkillsBadge
+  },
 }
 </script>
 

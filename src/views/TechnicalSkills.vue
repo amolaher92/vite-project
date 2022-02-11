@@ -81,17 +81,85 @@
       </div>
     </div>
   </section>
+  <div class="container mx-auto w-full border p-12 my-12">
+    <h2 class="flex items-center justify-center text-3xl font-bold font-serif border p-4">What I do.</h2>
+    <div class="w-full grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-4 p-4 sm:p-12 border mt-8">
+      <skills-badge v-for="i in 16">{{ i }}</skills-badge>
+    </div>
+  </div>
+  <div class="container mx-auto w-full border p-12 my-12">
+    <h2 class="flex items-center justify-center text-3xl font-bold font-serif border p-4">Know how much I.</h2>
+    <div class="grid grid-cols sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="w-full flex flex-col gap-8 border mt-8 p-12 skew-y-12">
+        <ProgressBar v-for="value in values" :value="value">
+          {{ value }}%
+        </ProgressBar>
+      </div>
+      <div class="w-full flex flex-col gap-8 border mt-8 p-12 skew-y-12">
+        <ProgressBar v-for="value in values" :value="value" :showValue="false"/>
+      </div>
+      <div class="w-full flex flex-col gap-8 border mt-8 p-12 skew-y-12">
+        <ProgressBar v-for="value in values" :value="value" :showValue="false"/>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto w-full border py-8 px-4 my-12">
+    <h2 class="flex items-center justify-center text-3xl font-bold font-serif border p-4">Know more about
+      technology</h2>
+    <div class="grid grid-cols sm:grid-cols-2 gap-8 p-8 border mt-4">
+      <div class="shadow-lg">
+        <Card class="">
+          <template #title>
+            <span class="flex justify-center">
+            Advanced Card
+              </span>
+          </template>
+          <template #content>
+            <ul>
+              <li v-for="i in 7" class="flex"><i class="pi pi-chevron-right mr-2 mt-1"></i>{{ i }}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi tenetur, temporibus
+              </li>
+            </ul>
+          </template>
+        </Card>
+      </div>
+      <div class="shadow-lg">
+        <Card>
+          <template #title>
+           <span class="flex justify-center">
+            Advanced Card
+              </span>
+          </template>
+          <template #content>
+            <ul>
+              <li v-for="i in 7" class="flex"><i class="pi pi-chevron-right mr-2 mt-1"></i>{{ i }}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi tenetur, temporibus
+              </li>
+            </ul>
+          </template>
+          >
+        </Card>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
-export default{
-	name:"TechnicalSkills",
-	data(){
-		return{
+import SkillsBadge from "@/components/SkillsBadge.vue";
+import ProgressBar from 'primevue/progressbar';
+import Card from 'primevue/card';
 
-		}
-	}
+export default {
+  name: "TechnicalSkills",
+  components: {
+    SkillsBadge, ProgressBar, Card
+  },
+  data() {
+    return {
+      values: [50, 60, 70, 50, 60, 70],
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>
-	
+
 </style>
