@@ -81,10 +81,15 @@
       </div>
     </div>
   </section>
+  <admin-dashboard></admin-dashboard>
 </template>
 <script>
+import AdminDashboard from '@/layout/AdminDashboard.vue'
 export default{
 	name:"Educations",
+  components:{
+    AdminDashboard
+  },
 	data(){
 		return{
 
@@ -92,6 +97,6 @@ export default{
 	}
 }
 </script>
-<style lang="sass" scoped>
-	
+<style lang="scss" scoped>
+
 </style>
