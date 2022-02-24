@@ -82,15 +82,17 @@
     </div>
   </section>
   <image-banner></image-banner>
+  <Dashboard/>
 </template>
 
 <script>
 import ImageBanner from "@/layout/ImageBanner.vue";
+import Dashboard from "./Dashboard.vue";
 
 export default {
   name: "About",
   components: {
-    ImageBanner
+    ImageBanner, Dashboard
   }
 }
 </script>

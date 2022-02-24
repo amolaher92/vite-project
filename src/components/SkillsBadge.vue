@@ -1,5 +1,5 @@
 <template>
-  <img src="http://placehold.jp/100x100.png" alt="" v-tooltip.top="`Enter your username`"
+  <img src="http://placehold.jp/150x150.png" alt="" v-tooltip.top="`Enter your username`"
        class="rounded-full object-cover max-w-22 max-h-22 sm:max-w-32 sm:max-h-32"/>
 </template>
 

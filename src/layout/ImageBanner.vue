@@ -7,7 +7,14 @@
               src="https://media.istockphoto.com/photos/cheerful-fashionable-adult-man-in-city-setting-picture-id1310533180?b=1&k=20&m=1310533180&s=170667a&w=0&h=EdRuvIkrMifhyZJkHXf5Pk68ri44_g7OFnU8lIdbc-c="
               alt="" class="sm:w-96 sm:h-96 w-72 h-72 rounded-full object-cover"/>
         </div>
-        <div class="flex flex-col items-center justify-center py-8 px-12 sm:px-24 border">
+        <div class="flex flex-col items-center justify-center pt-6 px-12 sm:px-24 border space-y-2">
+          <h2 class="flex text-3xl font-bold font-serif">Software Engineer</h2>
+          <h3 class="flex flex-row space-x-1">
+            <font-awesome-icon icon="graduation-cap" size="lg" class="animate-bounce"/>
+            <span class="text-xl font-serif">Master in Computer Science(IN-Pune)</span>
+          </h3>
+        </div>
+        <div class="flex flex-col items-center justify-center p-4 px-12 sm:px-24 border">
           <div class="w-full grid grid-cols-5 grid-flex-cols gap-3">
             <img src="https://via.placeholder.com/100" alt="" class="rounded-full object-cover max-w-22 max-h-22"/>
             <img src="https://via.placeholder.com/100" alt="" class="rounded-full object-cover max-w-22 max-h-22"/>
